@@ -4,6 +4,8 @@ import "./globals.css";
 import Script from "next/script";
 import {ThemeProvider} from "@/components/theme-provider";
 
+export const runtime = 'edge';
+
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {

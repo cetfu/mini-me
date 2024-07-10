@@ -12,6 +12,7 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/c
 import {zodResolver} from "@hookform/resolvers/zod";
 import Image from "next/image";
 
+export const runtime = 'edge';
 
 const formSchema = z.object({
     skin: typeof window === 'undefined' ? z.any() : z.instanceof(FileList),
